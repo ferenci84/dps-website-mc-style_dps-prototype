@@ -1,0 +1,135 @@
+@import "reset.css";
+@import "typography.css";
+@import "forms.css";
+@import "colors.css";
+@import "box.css";
+
+:root {
+    --char-width: .6em;
+    --char-height: 1.2em;
+    --border-size: 0.2em;
+    --space-w: calc((var(--char-width) - var(--border-size)) / 2);
+    --space-h: calc((var(--char-height) - var(--border-size)) / 2);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 63em;
+    background: black;
+
+}
+
+.hidden {
+    display: none!important;
+}
+
+.logo {
+    color: white;
+    padding: 0 var(--char-width);
+}
+
+.logo pre {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: inherit;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.services .box.listing {
+    flex-basis: 46%;
+}
+
+.services .box.description {
+    flex-grow: 1;
+}
+
+.services {
+    margin-bottom: var(--char-height);
+}
+
+
+div.content {
+    /* margin-bottom: var(--char-height); */
+}
+
+h1 {
+
+}
+
+
+nav ul {
+    display: flex;
+}
+
+footer nav li {
+    counter-increment: step-counter;
+}
+
+footer nav li:before {
+    content: counter(step-counter);
+    position: absolute;
+    right: 100%;
+    top: 0;
+    text-align: right;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+}
+
+header nav a {
+    padding: 0 var(--char-width);
+}
+
+header nav a {
+    font-weight: bold;
+}
+
+footer nav li {
+    margin-left: 1.2em;
+    flex-grow: 1;
+}
+
+nav a:hover:not(:link) {
+    cursor: default;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul > li > nav {
+    visibility:hidden;
+    position: absolute;
+}
+
+nav ul > li:hover > nav {
+    visibility: visible;
+}
+
+header nav ul > li > nav {
+    top: 100%;
+    padding: var(--space-h) var(--space-w);
+}
+
+header nav ul > li > nav > ul {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    border: var(--border-size) solid #ffffff;
+    padding: var(--space-h) var(--space-w);
+}

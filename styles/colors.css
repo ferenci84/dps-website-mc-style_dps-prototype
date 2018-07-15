@@ -1,0 +1,63 @@
+body {
+    color: white;
+}
+
+.box {
+    background-color: #1818b2;
+}
+
+.logo pre .yellow {
+    color: #ffff54;
+}
+
+
+.warning {
+    color: #b26818;
+
+}
+
+.error {
+    color: #b21818;
+}
+
+.solution {
+    color: #18b218;
+}
+
+.emphasis, .tagline, .action, .info em {
+    color: #ffff54;
+}
+
+h1 {
+    color: white;
+}
+
+header nav ul {
+    background: #18b2b2;
+    color: white;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a::first-letter {
+    color: #ffff54;
+}
+
+header nav a:hover {
+    background-color: black;
+}
+
+footer nav ul {
+    color: white;
+}
+
+footer nav a {
+    background: #18b2b2;
+    color: black;
+}
+
+header nav ul > li > nav {
+    background-color: #18b2b2;
+}

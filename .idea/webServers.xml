@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="243c2837-9341-4480-aad0-5b485584acae" name="dps" url="http://dynamicprogrammingsolutions.com">
+        <fileTransfer host="dynamicprogrammingsolutions.com" port="22" privateKey="$USER_HOME$/.ssh/mtp_2.pem" rootFolder="/var/www/dps" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

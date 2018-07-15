@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: "Bitstream Vera Sans Mono Local";
+    src: url(../fonts/VeraMono.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bitstream Vera Sans Mono Local";
+    src: url(../fonts/VeraMono-Bold.woff);
+    font-weight: bold;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.2;
+    font-family: "Bitstream Vera Sans Mono Local", "Bitstream Vera Sans Mono", monospace;
+}
+
+span.log {
+    display: block;
+}
+
+p {
+    margin-bottom: var(--char-height);
+}
+
+.log:not(.info) em {
+    font-weight: bold;
+}
+
+.log:not(.info) em::before {
+    content: '*';
+}
+
+.log:not(.info) em::after {
+    content: '*';
+}
+
+h1 {
+    margin-bottom: var(--char-height);
+}
+
+.log, label.error, .has-log p {
+    --log-before: 14.4em;
+    margin-left: var(--log-before);
+}
+
+.has-log p .log {
+    margin-left: 0;
+}
+
+label.error {
+    --log-before: 12em;
+}
+
+.log::before, label.error::before {
+    position: absolute;
+    margin-left: calc(-1 * var(--log-before));
+    content: attr(data-time);
+    margin-right: 3.0em;
+}
+
+.log.info::before {
+    content: attr(data-time)' INFO';
+}
+
+.log.warning::before {
+    content: attr(data-time)' WARNING';
+    margin-right: 1.2em;
+}
+
+.log.emphasis::before {
+    content: attr(data-time)' EMPHASIS';
+    margin-right: .6em;
+}
+
+.log.tagline::before {
+    content: attr(data-time)' TAGLINE';
+    margin-right: .6em;
+}
+
+.log.solution::before {
+    content: attr(data-time)' SOLUTION';
+    margin-right: .6em;
+}
+
+.log.error::before, label.error::before {
+    content: attr(data-time)' ERROR';
+    margin-right: 2.4em;
+}
+
+.log.action::before {
+    content: attr(data-time)' ACTION';
+    margin-right: .6em;
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DPS prototype</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a>Services</a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Web applications</a></li>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Website programming</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+<pre>
+  _____  _______
+<span class="yellow">|</span><span class="yellow">\</span>     /|      /|         _                             _
+<span class="yellow">|</span>  <span class="yellow">\</span> /  |    /  |        | |                           (_)
+<span class="yellow">|</span>  / <span class="yellow">\</span>  |  /    |      __| |_   _ _ __   __ _ _ __ ___  _  ___
+<span class="yellow">|</span>/_____<span class="yellow">\</span>|/______|     / _` | | | | '_ \ / _` | '_ ` _ \| |/ __|
+<span class="yellow">|</span>      <span class="yellow">/</span>|      /|    | (_| | |_| | | | | (_| | | | | | | | (__
+<span class="yellow">|</span>    <span class="yellow">/</span>  |    /  |     \__,_|\__, |_| |_|\__,_|_| |_| |_|_|\___|
+<span class="yellow">|</span>  <span class="yellow">/</span>    |  /    |            __/ |
+<span class="yellow">|</span><span class="yellow">/</span>______|/______|           |___/    _                    _     _   _
+ ___ ___ ___ ___ ___ ___ _____ _____(_)___ ___    ___ ___| |_ _| |_(_)___ ___ ___
+| . |  _| . | . |  _| .'|     |     | |   | . |  |_ -| . | | | |  _| | . |   |_ -|
+|  _|_| |___|_  |_| |__,|_|_|_|_|_|_|_|_|_|_  |  |___|___|_|___|_| |_|___|_|_|___|
+|_|         |___|                         |___|
+
+</pre>
+        </div>
+        <div class="tagline">
+            <h1><span class="log tagline">Web development for your unique needs</span></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+
+            <p><span class="log info">Hi user!</span></p>
+            <p>
+                <span class="log info">You have a great idea for the web with great potential, right?</span>
+                <span class="log error">But you don't have anyone to do it.</span>
+                <span class="log warning">Also you have <em>very special needs</em>, it's not something that a kid could do.</span>
+
+            </p>
+            <p>
+                <span class="log info">We have a good news. We are specialized for your special needs.</span>
+                <span class="log solution">We'll do just what you need, <em>nothing more, nothing less</em></span>
+            </p>
+            <p class="log action">Explore our services below and find out how we can help you!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="two-box services">
+            <div class="box listing">
+                <header>
+                    <h1>Our services</h1>
+                </header>
+                <div class="list">
+                    <header><div></div><div></div></header>
+                    <ul>
+                        <li><a class="page-selector selected" href="#web-applications"><div>Web applications</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
+                        <li><a class="page-selector" href="#web-design"><div>Web design</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
+                        <li><a class="page-selector" href="#website-development"><div>Website development</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
+                    </ul>
+                    <div class="placeholder"><div></div><div></div><!--<div></div>--></div>
+                </div>
+            </div>
+            <div class="box description" id="web-applications">
+                <header>
+                    <h2>Web applications</h2>
+                </header>
+                <div class="article">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+            <div class="box description" id="web-design">
+                <header>
+                    <h2>Web design</h2>
+                </header>
+                <div class="article">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+            <div class="box description" id="website-development">
+                <header>
+                    <h2>Website development</h2>
+                </header>
+                <div class="article">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <header><h1>Get A Quote!</h1></header>
+            <form>
+                <div class="form-section">
+                    <div class="text-input-container">
+                        <label>Your email:</label>
+                        <input type="text" name="email" placeholder="Write your email address" />
+                        <label class="log error" data-time="07:00:32,048">Your email address is not valid</label>
+                    </div>
+                    <div class="text-input-container">
+                        <label>Subject:</label>
+                        <input type="text" name="subject" placeholder="The subject of your message (example: quote request)" />
+                    </div>
+                    <div class="textarea-container">
+                        <label>Message:</label>
+                        <textarea name="message" rows="8" placeholder="Description of your project"></textarea>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="button-container">
+                        <button type="submit"><span class="hotkey">S</span>ubmit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
