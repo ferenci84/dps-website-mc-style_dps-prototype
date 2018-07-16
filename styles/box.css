@@ -96,9 +96,20 @@
     content: 'Name';
 }
 
-.box > .list > ul > li a {
+.box > .list > ul li a,
+.box > .list > ul li > div {
     display: flex;
     flex-grow: 1;
+}
+
+.box > .list > ul li > div {
+    margin-left: 0;
+}
+
+.box > .list > ul > li > ul {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 
@@ -115,15 +126,13 @@
     white-space: pre;
 }
 
-.box > .list > header > div:nth-child(2),
-.box > .list > ul > li div:nth-child(2),
-.box > .list > .placeholder > div:nth-child(2)
+.box > .list > header > div:nth-child(2), .box > .list > ul li div:nth-child(2), .box > .list > .placeholder > div:nth-child(2)
 {
     width: calc(var(--char-width) * 7);
     text-align: left;
 }
 
-.box > .list > ul > li div:nth-child(2) {
+.box > .list > ul li div:nth-child(2) {
     text-align: right;
 }
 
@@ -144,17 +153,17 @@
     content: 'Modify time';
 }
 
-.box > .list > ul > li {
+.box > .list > ul li {
     display: flex;
+    flex-direction: column;
 }
 
-.box > .list > ul > li a.selected {
+.box > .list > ul li a.selected {
     background-color: #18b2b2;
     color: black;
 }
 
-.box > .list > ul > li a.selected div:nth-child(2),
-.box > .list > ul > li a.selected div:nth-child(3){
+.box > .list > ul li a.selected div:nth-child(2), .box > .list > ul > li a.selected div:nth-child(3){
     border-left-color: black;
 }
 
@@ -162,9 +171,18 @@
 
 }
 
-.box > .list > ul > li div:nth-child(1) {
+.box > .list > ul li div:nth-child(1) {
     flex-grow: 1;
     padding-left: var(--char-width);
+}
+
+.box > .list > ul > li > div:nth-child(1) {
+    padding-left: 0;
+    cursor: default;
+}
+
+.box > .list > ul > li.sub div:nth-child(1), .box > .list > ul > li > ul > li div:nth-child(1) {
+    padding-left: calc(var(--char-width) * 3);
 }
 
 .box > .list > ul > li div:nth-child(2)::before {

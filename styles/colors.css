@@ -32,8 +32,12 @@ h1 {
     color: white;
 }
 
-header nav ul {
+body > header > nav {
     background: #18b2b2;
+    color: black;
+}
+
+body > header > nav {
     color: white;
 }
 

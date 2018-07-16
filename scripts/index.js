@@ -25,10 +25,12 @@ document.addEventListener("DOMContentLoaded",function() {
     elems.forEach(function(elem) {
         var link = elem.parentNode;
         var href = link.getAttribute("href");
-        var id = href.substr(1);
-        var section = document.getElementById(id);
-        var inner = section.innerHTML;
-        elem.dataset.size = inner.length;
+        if (href && href.substr(0,1) == "#") {
+            var id = href.substr(1);
+            var section = document.getElementById(id);
+            var inner = section.innerHTML;
+            elem.dataset.size = inner.length;
+        }
     })
 })
 
@@ -50,18 +52,29 @@ document.addEventListener("DOMContentLoaded",function() {
     function pageSelectorClick(event) {
         event.preventDefault();
         var thisLink = event.currentTarget;
-        var parent = thisLink.parentNode.parentNode;
+        var parent = thisLink;
+        while(parent.parentNode) {
+            parent = parent.parentNode;
+            if (parent.classList.contains("page-list")) break;
+        }
         var allLinks = parent.querySelectorAll("a");
+
         allLinks.forEach(function(link) {
             var href = link.getAttribute("href");
-            if (href.charAt(0) == '#') {
+            if (href && href.charAt(0) == '#') {
                 var id = href.substr(1);
-                console.log(id);
                 var element = document.getElementById(id);
-                if (link !== thisLink) {
-                    link.classList.remove("selected");
-                    element.classList.add("hidden");
-                } else {
+                link.classList.remove("selected");
+                element.classList.add("hidden");
+            }
+        })
+
+        allLinks.forEach(function(link) {
+            var href = link.getAttribute("href");
+            if (href && href.charAt(0) == '#') {
+                var id = href.substr(1);
+                var element = document.getElementById(id);
+                if (link === thisLink) {
                     link.classList.add("selected");
                     element.classList.remove("hidden");
                 }
@@ -70,6 +83,24 @@ document.addEventListener("DOMContentLoaded",function() {
 
 
     }
+});
+
+document.addEventListener("DOMContentLoaded",function() {
+    var links = document.querySelectorAll("a.open-modal[href]");
+    links.forEach(function(link){
+        var href = link.getAttribute("href");
+        var id = href.substr(1);
+        var element = document.getElementById(id);
+        link.addEventListener("click",function(event) {
+            event.preventDefault();
+            element.classList.remove("hidden");
+        })
+        element.addEventListener("click",function(event) {
+            if (event.target === element) {
+                element.classList.add("hidden");
+            }
+        })
+    })
 });
 
 window.addEventListener("load",function() {

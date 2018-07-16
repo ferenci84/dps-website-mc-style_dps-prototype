@@ -14,15 +14,43 @@
 
 body {
     margin: 0 auto;
-    max-width: 63em;
+    font-size: 16px;
+    max-width: 64em;
     background: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.container.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container.main > div {
+    flex-grow: 1;
 }
 
 .hidden {
     display: none!important;
 }
 
+body > header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 var(--char-width);
+}
+
+body > header nav .logo {
+    font-weight: bold;
+    color: white;
+}
+
+/*
 .logo {
     color: white;
     padding: 0 var(--char-width);
@@ -36,7 +64,7 @@ body {
     width: fit-content;
     margin: 0 auto;
 }
-
+*/
 .container {
     display: flex;
     flex-direction: column;
@@ -53,7 +81,7 @@ body {
 }
 
 .services .box.description {
-    flex-grow: 1;
+    flex-basis: 54%;
 }
 
 .services {
@@ -67,6 +95,10 @@ div.content {
 
 h1 {
 
+}
+
+body > header > nav {
+    /* margin-bottom: var(--char-height); */
 }
 
 
@@ -123,7 +155,9 @@ nav ul > li:hover > nav {
 
 header nav ul > li > nav {
     top: 100%;
+    left: 0;
     padding: var(--space-h) var(--space-w);
+    z-index: 1;
 }
 
 header nav ul > li > nav > ul {
@@ -132,4 +166,15 @@ header nav ul > li > nav > ul {
     white-space: nowrap;
     border: var(--border-size) solid #ffffff;
     padding: var(--space-h) var(--space-w);
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
