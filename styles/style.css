@@ -2,7 +2,7 @@
 @import "typography.css";
 @import "forms.css";
 @import "colors.css";
-@import "box.css";
+@import "box1.css";
 
 :root {
     --char-width: .6em;
