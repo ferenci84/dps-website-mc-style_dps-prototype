@@ -59,8 +59,8 @@ label.error {
     position: absolute;
     margin-left: calc(-1 * var(--log-before));
     content: attr(data-time);
-    margin-right: 3.0em;
 }
+
 
 .log.info::before {
     content: attr(data-time)' INFO';
@@ -94,5 +94,16 @@ label.error {
 .log.action::before {
     content: attr(data-time)' ACTION';
     margin-right: .6em;
+}
+
+@media (max-width: 650px) {
+    .log, label.error, .has-log p {
+        margin-left: 0;
+    }
+    .log.log::before, label.label.error::before {
+        position: static;
+        margin-left: 0;
+        margin-right: var(--char-width);
+    }
 }
 

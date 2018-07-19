@@ -1,0 +1,37 @@
+
+@mixin set-width($min-width, $max-width, $width-unit, $min-vw, $max-vw, $vw-unit, $steps, $selector) {
+  $width-range: $max-width - $min-width;
+  $vw-range: $max-vw - $min-vw;
+  @for $step from 1 through $steps {
+
+    $width: round($min-width + (($step - 1) / ($steps - 1)) * $width-range);
+    $vw: (($width - $min-width)/$width-range)*$vw-range+$min-vw;
+
+    @media (min-width: $vw*$vw-unit) {
+      #{$selector} {
+        max-width: $width*$width-unit;
+      }
+    }
+  }
+}
+
+$minimum: 31;
+$char-width: .602 * 16;
+$unit: $char-width * 1px;
+$selector: '.main-container';
+
+body, #{$selector} {
+  min-width: $minimum * $unit;
+}
+
+#{$selector} {
+  max-width: $minimum * $unit;
+}
+
+@mixin my-set-width($min,$max,$minside,$maxside,$step-every) {
+  @include set-width($min,$max,$unit,$min+$minside,$max+$maxside,$unit,round(($max - $min) / $step-every),$selector);
+}
+
+@include my-set-width($minimum,70,0,0,1);
+@include my-set-width(71,90,1,20,1);
+@include my-set-width(91,110,20,20,1);
