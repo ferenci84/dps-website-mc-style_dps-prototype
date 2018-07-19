@@ -103,6 +103,29 @@ document.addEventListener("DOMContentLoaded",function() {
     })
 });
 
+document.addEventListener("DOMContentLoaded",function() {
+    var h2s = document.querySelectorAll("h2");
+    h2s.forEach(function(h2) {
+        var wrapper = document.createElement("div");
+        wrapper.classList.add("h2-wrapper-block");
+        h2.parentNode.insertBefore(wrapper,h2);
+        var h2wrapper = document.createElement("div");
+        h2wrapper.classList.add("h2-wrapper");
+
+        var h2innerwrapper = document.createElement("div");
+        h2innerwrapper.appendChild(document.createElement("div"));
+        h2innerwrapper.appendChild(h2);
+        h2innerwrapper.appendChild(document.createElement("div"));
+
+        wrapper.appendChild(h2wrapper);
+        h2wrapper.appendChild(document.createElement("div"));
+        h2wrapper.children[0].appendChild(document.createElement("div"));
+        h2wrapper.appendChild(h2innerwrapper);
+        h2wrapper.appendChild(document.createElement("div"));
+        h2wrapper.children[2].appendChild(document.createElement("div"));
+    })
+});
+
 window.addEventListener("load",function() {
     console.log("page loaded")
 })

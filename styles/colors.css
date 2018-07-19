@@ -1,3 +1,7 @@
+html, body {
+    background-color: black;
+}
+
 body {
     color: white;
 }
@@ -32,12 +36,12 @@ h1 {
     color: white;
 }
 
-body > header > nav {
+.main-container > header > nav {
     background: #18b2b2;
     color: black;
 }
 
-body > header > nav {
+.main-container > header > nav {
     color: white;
 }
 

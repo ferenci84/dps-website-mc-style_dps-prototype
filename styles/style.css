@@ -36,7 +36,7 @@ body {
     display: none!important;
 }
 
-body > header nav {
+.main-container > header nav {
     display: flex;
     justify-content: space-between;
 }
@@ -45,7 +45,7 @@ body > header nav {
     padding: 0 var(--char-width);
 }
 
-body > header nav .logo {
+.main-container > header nav .logo {
     font-weight: bold;
     color: white;
 }
@@ -97,7 +97,7 @@ h1 {
 
 }
 
-body > header > nav {
+.main-container >  header > nav {
     /* margin-bottom: var(--char-height); */
 }
 
