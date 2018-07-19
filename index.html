@@ -25,42 +25,47 @@
                 <li><a href="#">Get A Quote</a></li>
             </ul>
         </nav>
-
-        <div class="tagline">
-            <h1><span class="log tagline">Web development for your unique needs</span></h1>
-        </div>
     </header>
-    <div class="container">
-        <div class="content">
 
-            <p><span class="log info">Hi user!</span></p>
-            <p>
-                <span class="log info">You have a great idea for the web with great potential, right?</span>
-                <span class="log error">But you don't have a programmer to do it.</span>
-                <span class="log warning">Also you have <em>very special needs</em>, it's not something that a kid could do.</span>
-
-            </p>
-            <p>
-                <span class="log info">We have a good news. We are specialized for your special needs.</span>
-                <span class="log solution">We'll do just what you need, <em>nothing more, nothing less</em></span>
-            </p>
-            <p class="log action">Explore our services below and find out how we can help you!</p>
-        </div>
-    </div>
-    <div class="container">
+    <div class="container main">
         <div class="two-box services">
             <div class="box listing">
                 <header>
-                    <h1>Our services</h1>
+                    <h1>Home</h1>
                 </header>
                 <div class="list">
                     <header><div></div><div></div></header>
                     <ul class="page-list">
-                        <li><a class="page-selector selected" href="#web-applications"><div>Web applications</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
-                        <li><a class="page-selector" href="#web-design"><div>Web design</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
-                        <li><a class="page-selector" href="#website-development"><div>Website development</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
+                        <li><a class="page-selector selected" href="#greeting"><div>What's this stuff about?</div><div data-size></div></a></li>
+                        <li>
+                            <div><div>Services</div><div data-size></div></div>
+                            <ul>
+                                <li><a class="page-selector" href="#web-applications"><div>Web applications</div><div data-size></div></a></li>
+                                <li><a class="page-selector" href="#web-design"><div>Web design</div><div data-size></div></a></li>
+                                <li><a class="page-selector" href="#website-development"><div>Website development</div><div data-size></div></a></li>
+                            </ul>
+                        </li>
+                        <li><a class="open-modal" href="#get-a-quote"><div>Get A Quote</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
                     </ul>
                     <div class="placeholder"><div></div><div></div><!--<div></div>--></div>
+                </div>
+            </div>
+            <div class="box description" id="greeting">
+                <header>
+                    <h2>Greeting</h2>
+                </header>
+                <div class="article">
+                    <p>Hi user!</p>
+                    <p>
+                        You have a great idea for the web with great potential, right?
+                        But you don't have a programmer to do it.
+                        Also you have <em>very special needs</em>, it's not something that a kid could do.
+                    </p>
+                    <p>
+                        We have a good news. We are specialized for your special needs.
+                        We'll do just what you need, <em>nothing more, nothing less</em>
+                    </p>
+                    <p>Explore our services below and find out how we can help you!</p>
                 </div>
             </div>
             <div class="box description" id="web-applications">
@@ -98,30 +103,32 @@
             </div>
         </div>
 
-        <div class="form-container">
-            <header><h1>Get A Quote!</h1></header>
-            <form>
-                <div class="form-section">
-                    <div class="text-input-container">
-                        <label>Your email:</label>
-                        <input type="text" name="email" placeholder="Write your email address" />
-                        <label class="log error" data-time="07:00:32,048">Your email address is not valid</label>
+        <div id="get-a-quote" class="modal hidden">
+            <div class="form-container">
+                <header><h1>Get A Quote!</h1></header>
+                <form>
+                    <div class="form-section">
+                        <div class="text-input-container">
+                            <label>Your email:</label>
+                            <input type="text" name="email" placeholder="Write your email address" />
+                            <label class="log error" data-time="07:00:32,048">Your email address is not valid</label>
+                        </div>
+                        <div class="text-input-container">
+                            <label>Subject:</label>
+                            <input type="text" name="subject" placeholder="The subject of your message (example: quote request)" />
+                        </div>
+                        <div class="textarea-container">
+                            <label>Message:</label>
+                            <textarea name="message" rows="8" placeholder="Description of your project"></textarea>
+                        </div>
                     </div>
-                    <div class="text-input-container">
-                        <label>Subject:</label>
-                        <input type="text" name="subject" placeholder="The subject of your message (example: quote request)" />
+                    <div class="form-section">
+                        <div class="button-container">
+                            <button type="submit"><span class="hotkey">S</span>ubmit</button>
+                        </div>
                     </div>
-                    <div class="textarea-container">
-                        <label>Message:</label>
-                        <textarea name="message" rows="8" placeholder="Description of your project"></textarea>
-                    </div>
-                </div>
-                <div class="form-section">
-                    <div class="button-container">
-                        <button type="submit"><span class="hotkey">S</span>ubmit</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
