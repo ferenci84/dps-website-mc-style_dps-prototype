@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>DPS prototype</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style2.css" />
     <script src="scripts/index.js"></script>
 </head>
 <body>
+
+    <div class="main-container">
+
     <header>
         <nav>
-            <div class="logo">Dynamic programming solutions</div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a>Services</a>
@@ -25,77 +28,71 @@
                 <li><a href="#">Get A Quote</a></li>
             </ul>
         </nav>
-
-        <div class="tagline">
-            <h1><span class="log tagline">Web development for your unique needs</span></h1>
-        </div>
     </header>
-    <div class="container">
-        <div class="content">
 
-            <p><span class="log info">Hi user!</span></p>
-            <p>
-                <span class="log info">You have a great idea for the web with great potential, right?</span>
-                <span class="log error">But you don't have a programmer to do it.</span>
-                <span class="log warning">Also you have <em>very special needs</em>, it's not something that a kid could do.</span>
-
-            </p>
-            <p>
-                <span class="log info">We have a good news. We are specialized for your special needs.</span>
-                <span class="log solution">We'll do just what you need, <em>nothing more, nothing less</em></span>
-            </p>
-            <p class="log action">Explore our services below and find out how we can help you!</p>
-        </div>
+    <div class="container logo">
+        <h1>Dynamic Programming Solutions</h1>
     </div>
-    <div class="container">
-        <div class="two-box services">
-            <div class="box listing">
-                <header>
-                    <h1>Our services</h1>
-                </header>
-                <div class="list">
-                    <header><div></div><div></div></header>
-                    <ul class="page-list">
-                        <li><a class="page-selector selected" href="#web-applications"><div>Web applications</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
-                        <li><a class="page-selector" href="#web-design"><div>Web design</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
-                        <li><a class="page-selector" href="#website-development"><div>Website development</div><div data-size=""></div><!--<div data-modify-time="Jun  8 06:36"></div>--></a></li>
-                    </ul>
-                    <div class="placeholder"><div></div><div></div><!--<div></div>--></div>
-                </div>
-            </div>
-            <div class="box description" id="web-applications">
-                <header>
-                    <h2>Web applications</h2>
-                </header>
-                <div class="article">
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                </div>
-            </div>
-            <div class="box description" id="web-design">
-                <header>
-                    <h2>Web design</h2>
-                </header>
-                <div class="article">
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                </div>
-            </div>
-            <div class="box description" id="website-development">
-                <header>
-                    <h2>Website development</h2>
-                </header>
-                <div class="article">
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum</p>
-                </div>
-            </div>
+
+    <article class="container main">
+        <div class="red-box">
+            <p>Hi user!</p>
+            <p>Welcome to the <em>backend</em>! (sorry, this is a strange world) We are <em>zombies</em> who feel at home here, and
+                providing <em>custom web development for small companies</em> like yours.</p>
+            <p>We simplify problems and make everything possible (no kidding). You don't have to dream big to take
+                advantage of customized development.</p>
+        </div>
+
+        <div class="main-content">
+            <h2>Our Services</h2>
+            <ul>
+                <li><em>Automatisms</em> created for your company that provides fluent interaction
+                    with your customers. <a href="#">Read more</a></li>
+
+                <li><em>Web applications</em> specialized for your service created for your own need. more</li>
+
+                <li><em>Website development</em> and renewing old ones. We can create web design for alive humans, not
+                    just for zombies. More about the design services at our other website, ArtFlow Design</li>
+
+                <li><em>Your own web server</em> built and managed based on your needs that will give you the fastest
+                    possible website with independence, flexibility and security. more</li>
+            </ul>
+
+            <h2>Technologies we master</h2>
+
+            <p>We use pure languages, and those frameworks that are highly flexible. We know the core language and
+                do not depend on the frameworks, achieving high flexibility.</p>
+
+            <p><span class="log warning">This is technical, you may become zombie if you read this</span></p>
+
+            <ul>
+
+                <li>Backend: Java EE or PHP with laravel framework.</li>
+
+                <li>Frontend: pure javascript and CSS</li>
+
+                <li>Servers: Ubuntu linux server on Amazon AWS EC2</li>
+
+                <li>Database: MySQL and PostgreSQL</li>
+
+            </ul>
+
+            <h2>Everything based on your specific needs</h2>
+
+            <p>We do not use inflexible prebuilt systems. Instead, we do everything based on your own needs in KISS
+                way: keep it stupid simple. You get everything you need, and nothing that you don't.</p>
+
+            <h2>We are a small team</h2>
+
+            <p>Your project will not be lost among 3rd class programmers in a big company. We have just a few team
+            members with complementing skills, who master their own field, thus your project will be handled
+                firsthand by the top developers.</p>
+
+            <h2>Get a quote</h2>
+
+            <p>Tell us what you need. We will get back to you with specific questions and will provide pricing for
+                the project. You will get an answer within 24 hours during business days.</p>
+
         </div>
 
         <div class="form-container">
@@ -123,7 +120,11 @@
                 </div>
             </form>
         </div>
-    </div>
+
+    </article>
+
+    <div class="container can-stretch"></div>
+
     <footer>
         <nav>
             <ul>
@@ -135,5 +136,7 @@
             </ul>
         </nav>
     </footer>
+
+    </div>
 </body>
 </html>
