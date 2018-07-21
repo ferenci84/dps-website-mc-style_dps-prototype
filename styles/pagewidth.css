@@ -1,239 +1,179 @@
 body, .main-container {
-  min-width: 298.592px; }
+  min-width: 31ch; }
 
 .main-container {
-  max-width: 298.592px; }
+  max-width: 31ch; }
 
-@media (min-width: 298.592px) {
+@media (min-width: 465px) {
   .main-container {
-    max-width: 298.592px; } }
-@media (min-width: 308.224px) {
+    max-width: 31ch; } }
+@media (min-width: 480px) {
   .main-container {
-    max-width: 308.224px; } }
-@media (min-width: 317.856px) {
+    max-width: 32ch; } }
+@media (min-width: 495px) {
   .main-container {
-    max-width: 317.856px; } }
-@media (min-width: 327.488px) {
+    max-width: 33ch; } }
+@media (min-width: 510px) {
   .main-container {
-    max-width: 327.488px; } }
-@media (min-width: 337.12px) {
+    max-width: 34ch; } }
+@media (min-width: 525px) {
   .main-container {
-    max-width: 337.12px; } }
-@media (min-width: 346.752px) {
+    max-width: 35ch; } }
+@media (min-width: 540px) {
   .main-container {
-    max-width: 346.752px; } }
-@media (min-width: 356.384px) {
+    max-width: 36ch; } }
+@media (min-width: 555px) {
   .main-container {
-    max-width: 356.384px; } }
-@media (min-width: 366.016px) {
+    max-width: 37ch; } }
+@media (min-width: 570px) {
   .main-container {
-    max-width: 366.016px; } }
-@media (min-width: 375.648px) {
+    max-width: 38ch; } }
+@media (min-width: 585px) {
   .main-container {
-    max-width: 375.648px; } }
-@media (min-width: 385.28px) {
+    max-width: 39ch; } }
+@media (min-width: 600px) {
   .main-container {
-    max-width: 385.28px; } }
-@media (min-width: 394.912px) {
+    max-width: 40ch; } }
+@media (min-width: 615px) {
   .main-container {
-    max-width: 394.912px; } }
-@media (min-width: 404.544px) {
+    max-width: 41ch; } }
+@media (min-width: 630px) {
   .main-container {
-    max-width: 404.544px; } }
-@media (min-width: 414.176px) {
+    max-width: 42ch; } }
+@media (min-width: 645px) {
   .main-container {
-    max-width: 414.176px; } }
-@media (min-width: 423.808px) {
+    max-width: 43ch; } }
+@media (min-width: 660px) {
   .main-container {
-    max-width: 423.808px; } }
-@media (min-width: 433.44px) {
+    max-width: 44ch; } }
+@media (min-width: 690px) {
   .main-container {
-    max-width: 433.44px; } }
-@media (min-width: 443.072px) {
+    max-width: 46ch; } }
+@media (min-width: 705px) {
   .main-container {
-    max-width: 443.072px; } }
-@media (min-width: 452.704px) {
+    max-width: 47ch; } }
+@media (min-width: 720px) {
   .main-container {
-    max-width: 452.704px; } }
-@media (min-width: 462.336px) {
+    max-width: 48ch; } }
+@media (min-width: 735px) {
   .main-container {
-    max-width: 462.336px; } }
-@media (min-width: 471.968px) {
+    max-width: 49ch; } }
+@media (min-width: 750px) {
   .main-container {
-    max-width: 471.968px; } }
-@media (min-width: 491.232px) {
+    max-width: 50ch; } }
+@media (min-width: 765px) {
   .main-container {
-    max-width: 491.232px; } }
-@media (min-width: 500.864px) {
+    max-width: 51ch; } }
+@media (min-width: 780px) {
   .main-container {
-    max-width: 500.864px; } }
-@media (min-width: 510.496px) {
+    max-width: 52ch; } }
+@media (min-width: 795px) {
   .main-container {
-    max-width: 510.496px; } }
-@media (min-width: 520.128px) {
+    max-width: 53ch; } }
+@media (min-width: 810px) {
   .main-container {
-    max-width: 520.128px; } }
-@media (min-width: 529.76px) {
+    max-width: 54ch; } }
+@media (min-width: 825px) {
   .main-container {
-    max-width: 529.76px; } }
-@media (min-width: 539.392px) {
+    max-width: 55ch; } }
+@media (min-width: 840px) {
   .main-container {
-    max-width: 539.392px; } }
-@media (min-width: 549.024px) {
+    max-width: 56ch; } }
+@media (min-width: 855px) {
   .main-container {
-    max-width: 549.024px; } }
-@media (min-width: 558.656px) {
+    max-width: 57ch; } }
+@media (min-width: 870px) {
   .main-container {
-    max-width: 558.656px; } }
-@media (min-width: 568.288px) {
+    max-width: 58ch; } }
+@media (min-width: 885px) {
   .main-container {
-    max-width: 568.288px; } }
-@media (min-width: 577.92px) {
+    max-width: 59ch; } }
+@media (min-width: 900px) {
   .main-container {
-    max-width: 577.92px; } }
-@media (min-width: 587.552px) {
+    max-width: 60ch; } }
+@media (min-width: 930px) {
   .main-container {
-    max-width: 587.552px; } }
-@media (min-width: 597.184px) {
+    max-width: 61ch; } }
+@media (min-width: 951.6666666667px) {
   .main-container {
-    max-width: 597.184px; } }
-@media (min-width: 606.816px) {
+    max-width: 62ch; } }
+@media (min-width: 973.3333333333px) {
   .main-container {
-    max-width: 606.816px; } }
-@media (min-width: 616.448px) {
+    max-width: 63ch; } }
+@media (min-width: 995px) {
   .main-container {
-    max-width: 616.448px; } }
-@media (min-width: 626.08px) {
+    max-width: 64ch; } }
+@media (min-width: 1038.3333333333px) {
   .main-container {
-    max-width: 626.08px; } }
-@media (min-width: 635.712px) {
+    max-width: 66ch; } }
+@media (min-width: 1060px) {
   .main-container {
-    max-width: 635.712px; } }
-@media (min-width: 645.344px) {
+    max-width: 67ch; } }
+@media (min-width: 1081.6666666667px) {
   .main-container {
-    max-width: 645.344px; } }
-@media (min-width: 654.976px) {
+    max-width: 68ch; } }
+@media (min-width: 1103.3333333333px) {
   .main-container {
-    max-width: 654.976px; } }
-@media (min-width: 664.608px) {
+    max-width: 69ch; } }
+@media (min-width: 1125px) {
   .main-container {
-    max-width: 664.608px; } }
-@media (min-width: 674.24px) {
+    max-width: 70ch; } }
+@media (min-width: 1140px) {
   .main-container {
-    max-width: 674.24px; } }
-@media (min-width: 693.504px) {
+    max-width: 71ch; } }
+@media (min-width: 1158.9473684211px) {
   .main-container {
-    max-width: 683.872px; } }
-@media (min-width: 712.768px) {
+    max-width: 72ch; } }
+@media (min-width: 1177.8947368421px) {
   .main-container {
-    max-width: 693.504px; } }
-@media (min-width: 732.032px) {
+    max-width: 73ch; } }
+@media (min-width: 1196.8421052632px) {
   .main-container {
-    max-width: 703.136px; } }
-@media (min-width: 751.296px) {
+    max-width: 74ch; } }
+@media (min-width: 1215.7894736842px) {
   .main-container {
-    max-width: 712.768px; } }
-@media (min-width: 770.56px) {
+    max-width: 75ch; } }
+@media (min-width: 1234.7368421053px) {
   .main-container {
-    max-width: 722.4px; } }
-@media (min-width: 789.824px) {
+    max-width: 76ch; } }
+@media (min-width: 1253.6842105263px) {
   .main-container {
-    max-width: 732.032px; } }
-@media (min-width: 809.088px) {
+    max-width: 77ch; } }
+@media (min-width: 1272.6315789474px) {
   .main-container {
-    max-width: 741.664px; } }
-@media (min-width: 828.352px) {
+    max-width: 78ch; } }
+@media (min-width: 1291.5789473684px) {
   .main-container {
-    max-width: 751.296px; } }
-@media (min-width: 847.616px) {
+    max-width: 79ch; } }
+@media (min-width: 1329.4736842105px) {
   .main-container {
-    max-width: 760.928px; } }
-@media (min-width: 886.144px) {
+    max-width: 81ch; } }
+@media (min-width: 1348.4210526316px) {
   .main-container {
-    max-width: 780.192px; } }
-@media (min-width: 905.408px) {
+    max-width: 82ch; } }
+@media (min-width: 1367.3684210526px) {
   .main-container {
-    max-width: 789.824px; } }
-@media (min-width: 924.672px) {
+    max-width: 83ch; } }
+@media (min-width: 1386.3157894737px) {
   .main-container {
-    max-width: 799.456px; } }
-@media (min-width: 943.936px) {
+    max-width: 84ch; } }
+@media (min-width: 1405.2631578947px) {
   .main-container {
-    max-width: 809.088px; } }
-@media (min-width: 963.2px) {
+    max-width: 85ch; } }
+@media (min-width: 1424.2105263158px) {
   .main-container {
-    max-width: 818.72px; } }
-@media (min-width: 982.464px) {
+    max-width: 86ch; } }
+@media (min-width: 1443.1578947368px) {
   .main-container {
-    max-width: 828.352px; } }
-@media (min-width: 1001.728px) {
+    max-width: 87ch; } }
+@media (min-width: 1462.1052631579px) {
   .main-container {
-    max-width: 837.984px; } }
-@media (min-width: 1020.992px) {
+    max-width: 88ch; } }
+@media (min-width: 1481.0526315789px) {
   .main-container {
-    max-width: 847.616px; } }
-@media (min-width: 1040.256px) {
+    max-width: 89ch; } }
+@media (min-width: 1500px) {
   .main-container {
-    max-width: 857.248px; } }
-@media (min-width: 1059.52px) {
-  .main-container {
-    max-width: 866.88px; } }
-@media (min-width: 1069.152px) {
-  .main-container {
-    max-width: 876.512px; } }
-@media (min-width: 1078.784px) {
-  .main-container {
-    max-width: 886.144px; } }
-@media (min-width: 1088.416px) {
-  .main-container {
-    max-width: 895.776px; } }
-@media (min-width: 1098.048px) {
-  .main-container {
-    max-width: 905.408px; } }
-@media (min-width: 1107.68px) {
-  .main-container {
-    max-width: 915.04px; } }
-@media (min-width: 1117.312px) {
-  .main-container {
-    max-width: 924.672px; } }
-@media (min-width: 1126.944px) {
-  .main-container {
-    max-width: 934.304px; } }
-@media (min-width: 1136.576px) {
-  .main-container {
-    max-width: 943.936px; } }
-@media (min-width: 1146.208px) {
-  .main-container {
-    max-width: 953.568px; } }
-@media (min-width: 1165.472px) {
-  .main-container {
-    max-width: 972.832px; } }
-@media (min-width: 1175.104px) {
-  .main-container {
-    max-width: 982.464px; } }
-@media (min-width: 1184.736px) {
-  .main-container {
-    max-width: 992.096px; } }
-@media (min-width: 1194.368px) {
-  .main-container {
-    max-width: 1001.728px; } }
-@media (min-width: 1204px) {
-  .main-container {
-    max-width: 1011.36px; } }
-@media (min-width: 1213.632px) {
-  .main-container {
-    max-width: 1020.992px; } }
-@media (min-width: 1223.264px) {
-  .main-container {
-    max-width: 1030.624px; } }
-@media (min-width: 1232.896px) {
-  .main-container {
-    max-width: 1040.256px; } }
-@media (min-width: 1242.528px) {
-  .main-container {
-    max-width: 1049.888px; } }
-@media (min-width: 1252.16px) {
-  .main-container {
-    max-width: 1059.52px; } }
+    max-width: 90ch; } }
 
 /*# sourceMappingURL=pagewidth.css.map */

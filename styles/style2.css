@@ -6,15 +6,15 @@
 @import "pagewidth.css";
 
 :root {
-    --char-width: .6em;
-    --char-height: 1.25em;
+    --char-width: 1ch;
+    --border-size-w: 0.2ch;
+    --char-height: 1.5em;
     --border-size: 0.2em;
-    --space-w: calc((var(--char-width) - var(--border-size)) / 2);
+    --space-w: calc((var(--char-width) - var(--border-size-w)) / 2);
     --space-h: calc((var(--char-height) - var(--border-size)) / 2);
 }
 
 body {
-    font-size: 16px;
     background: black;
 }
 
@@ -24,6 +24,46 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     position: relative;
+}
+
+.main-container > header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explanation {
+    background: #18b2b2;
+    color: white;
+    width: var(--char-width);
+    position: relative;
+}
+
+.explanation::before {
+    content: '?';
+    display: inline-block;
+    position: relative;
+    background: #18b2b2;
+    color: white;
+}
+
+.explanation:hover::before {
+    background: #181818;
+}
+
+.explanation:hover {
+
+}
+
+.explanation:hover::after {
+    content: attr(data-explanation);
+    position: absolute;
+    left: var(--char-width);
+    background: #18b2b2;
+    color: white;
+    width: calc(var(--char-width) * 25);
+    z-index: 1;
+    padding: 0 var(--char-width);
+
 }
 
 .container {
@@ -72,7 +112,7 @@ body {
 .red-box {
     background-color: #b21818;
     color: #ffff54;
-    padding: var(--char-height) calc(var(--char-width) * 4);
+    padding: var(--char-height) calc(var(--char-width) * 2);
 }
 
 .red-box p:last-child {
@@ -84,7 +124,7 @@ body {
 }
 
 .main-content {
-    padding: 0 calc(var(--char-width) * 4);
+    padding: calc(var(--char-height) * 1) calc(var(--char-width) * 2) 0 calc(var(--char-width) * 2);
 }
 
 article {
@@ -112,7 +152,7 @@ article em {
 }
 
 article a:link {
-    color: #18b2b2;
+    color: #18ffff;
 }
 
 article a:hover {
@@ -123,7 +163,7 @@ article a:hover {
     margin-bottom: var(--char-height);
 }
 
-.h2-wrapper-block {
+.h2-wrapper-block:not(:first-child) {
     margin-top: calc(var(--char-height) * 2);
 }
 
@@ -207,7 +247,15 @@ article a:hover {
 .main-container > header nav {
     display: flex;
     justify-content: space-between;
+}
+
+.main-container > header > nav {
     padding: 0 var(--char-width);
+}
+
+
+.main-container > header > nav nav {
+    padding: var(--space-h) var(--space-w);
 }
 
 .main-container > header nav .logo {
@@ -250,7 +298,7 @@ nav a {
 }
 
 .main-container > footer nav li {
-    margin-left: 1.2em;
+    margin-left: calc(var(--char-width) * 2);
     flex-grow: 1;
 }
 

@@ -36,7 +36,7 @@ h1 {
     color: white;
 }
 
-.main-container > header > nav {
+.main-container > header {
     background: #18b2b2;
     color: black;
 }
