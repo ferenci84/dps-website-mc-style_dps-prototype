@@ -19,8 +19,11 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+	font-style: inherit;
+	font-weight: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -33,7 +36,7 @@ footer, header, hgroup, main, menu, nav, section {
     display: none;
 }
 body {
-	line-height: 1;
+	line-height: inherit;
 }
 ol, ul {
 	list-style: none;
@@ -67,6 +70,7 @@ input, textarea {
 	font-family: inherit;
 	font-size: inherit;
 	background-color: inherit;
+	line-height: inherit;
 }
 
 button {

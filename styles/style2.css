@@ -6,15 +6,15 @@
 @import "pagewidth.css";
 
 :root {
-    --char-width: .6em;
-    --char-height: 1.25em;
+    --char-width: 1ch;
+    --border-size-w: 0.2ch;
+    --char-height: 1.5em;
     --border-size: 0.2em;
-    --space-w: calc((var(--char-width) - var(--border-size)) / 2);
+    --space-w: calc((var(--char-width) - var(--border-size-w)) / 2);
     --space-h: calc((var(--char-height) - var(--border-size)) / 2);
 }
 
 body {
-    font-size: 16px;
     background: black;
 }
 
@@ -43,11 +43,21 @@ body {
     flex-grow: 1;
 }
 
-.logo {
+/*.logo {
     padding: var(--char-height) calc(var(--char-width) * 2);
+    background: #181818;
+    float: right;
+    display: table;
+}*/
+
+img.logo {
+    display: table;
+    margin: 0 auto;
+    float: right;
+    max-height: 4.5em;
 }
 
-.logo h1 {
+/*.logo h1 {
     --border-size: .15em;
     display: flex;
     margin: 0;
@@ -68,7 +78,7 @@ body {
 
 .logo h1::after {
     margin-left: var(--char-width);
-}
+}*/
 
 .red-box {
     background-color: #b21818;
@@ -124,7 +134,7 @@ article a:hover {
     margin-bottom: var(--char-height);
 }
 
-.h2-wrapper-block {
+.h2-wrapper-block:not(:first-child) {
     margin-top: calc(var(--char-height) * 2);
 }
 
@@ -208,6 +218,10 @@ article a:hover {
 .main-container > header nav {
     display: flex;
     justify-content: space-between;
+    /*  */
+}
+
+.main-container > header > nav {
     padding: 0 var(--char-width);
 }
 

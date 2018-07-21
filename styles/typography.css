@@ -1,5 +1,5 @@
 
-@font-face {
+/*@font-face {
     font-family: "Bitstream Vera Sans Mono Local";
     src: url(../fonts/VeraMono.woff);
     font-weight: normal;
@@ -9,13 +9,76 @@
     font-family: "Bitstream Vera Sans Mono Local";
     src: url(../fonts/VeraMono-Bold.woff);
     font-weight: bold;
+}*/
+
+@font-face {
+    font-family: "IBM 8x14";
+    src: url(../fonts/PxPlus_IBM_MDA.WOFF);
+    font-weight: normal;
 }
 
-body {
+@font-face {
+    font-family: "IBM 8x14";
+    src: url(../fonts/PxPlus_IBM_MDA.WOFF);
+    font-weight: bold;
+}
 
-    font-size: 16px;
-    line-height: 1.25;
-    font-family: "Bitstream Vera Sans Mono Local", "Bitstream Vera Sans Mono", monospace;
+@font-face {
+    font-family: "IBM 8x8";
+    src: url(../fonts/PxPlus_TandyNew_TV.WOFF);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IBM 8x8";
+    src: url(../fonts/PxPlus_TandyNew_TV.WOFF);
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Amstrad 8x8";
+    src: url(../fonts/PxPlus_AmstradPC1512.WOFF);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Amstrad 8x8";
+    src: url(../fonts/PxPlus_AmstradPC1512.WOFF);
+    font-weight: bold;
+}
+
+/*@font-face {
+    font-family: "IBM 8x8";
+    src: url(../fonts/PxPlus_IBM_BIOS.WOFF);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IBM 8x8";
+    src: url(../fonts/PxPlus_IBM_BIOS.WOFF);
+    font-weight: bold;
+}*/
+
+@font-face {
+    font-family: "IBM thin";
+    src: url(../fonts/PxPlus_IBM_CGAthin.WOFF);
+    font-weight: normal;
+}
+
+html {
+    font-size: .875em;
+    line-height: 1.75;
+    font-family: "IBM 8x8", monospace;
+    --char-height: 1.75em;
+}
+
+
+.main-content {
+    font-size: .85em;
+    line-height: 1.75;
+    font-family: "Amstrad 8x8", monospace;
+    --char-height: 1.75em;
 }
 
 span.log {
@@ -43,7 +106,7 @@ h1 {
 }
 
 .log, label.error, .has-log p {
-    --log-before: 14.4em;
+    --log-before: calc(var(--char-width) * 22);
     margin-left: var(--log-before);
 }
 
@@ -52,7 +115,7 @@ h1 {
 }
 
 label.error {
-    --log-before: 12em;
+    --log-before: calc(var(--char-width) * 20);
 }
 
 .log::before, label.error::before {
