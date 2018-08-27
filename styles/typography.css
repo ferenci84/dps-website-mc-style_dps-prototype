@@ -1,15 +1,4 @@
-
-@font-face {
-    font-family: "Bitstream Vera Sans Mono Local";
-    src: url(../fonts/VeraMono.woff);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Bitstream Vera Sans Mono Local";
-    src: url(../fonts/VeraMono-Bold.woff);
-    font-weight: bold;
-}
+@import "vars.css";
 
 @font-face {
     font-family: "Commodore Rounded";
@@ -21,7 +10,7 @@
 body {
     font-size: 16px;
     line-height: 1.25;
-    font-family: "Commodore Rounded", "Bitstream Vera Sans Mono Local", "Bitstream Vera Sans Mono", monospace;
+    font-family: "Commodore Rounded", monospace;
 }
 
 span.log {

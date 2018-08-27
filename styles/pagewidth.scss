@@ -1,4 +1,6 @@
 
+@import "vars.css";
+
 @mixin set-width($min-width, $max-width, $width-unit, $min-vw, $max-vw, $vw-unit, $steps, $selector) {
   $width-range: $max-width - $min-width;
   $vw-range: $max-vw - $min-vw;
