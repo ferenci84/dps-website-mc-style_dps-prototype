@@ -125,6 +125,22 @@ document.addEventListener("DOMContentLoaded",function() {
         h2wrapper.children[2].appendChild(document.createElement("div"));
     })
 });
+document.addEventListener("DOMContentLoaded",function() {
+    document.querySelectorAll(".container").forEach(function(container) {
+        container.querySelectorAll(".explanation").forEach(function(expl) {
+            expl.addEventListener("mouseover",function (event) {
+                    var content = expl.querySelector(".explanation-content");
+                    content.style.left = 0;
+                    var contentOffset = content.getBoundingClientRect();
+                    var containerOffset = container.getBoundingClientRect();
+                    var delta = contentOffset.right - containerOffset.right;
+                    if (delta > 0) {
+                        content.style.left = "-" + delta + "px";
+                    }
+            })
+        });
+    });
+});
 
 window.addEventListener("load",function() {
     console.log("page loaded")

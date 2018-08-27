@@ -32,38 +32,27 @@ body {
 }
 
 .explanation {
-    background: #18b2b2;
-    color: white;
-    width: var(--char-width);
     position: relative;
+    border-bottom: dotted 2px;
+    cursor: default;
 }
 
-.explanation::before {
-    content: '?';
-    display: inline-block;
-    position: relative;
-    background: #18b2b2;
-    color: white;
+.explanation .explanation-content {
+    display: none;
 }
 
-.explanation:hover::before {
-    background: #181818;
-}
-
-.explanation:hover {
-
-}
-
-.explanation:hover::after {
-    content: attr(data-explanation);
+.explanation:hover .explanation-content {
+    display: block;
     position: absolute;
-    left: var(--char-width);
+    left: 0;
+    top: 100%;
     background: #18b2b2;
     color: white;
     width: calc(var(--char-width) * 25);
     z-index: 1;
     padding: 0 var(--char-width);
-
+    border-top: solid 5px transparent;
+    background-clip: padding-box;
 }
 
 .container {
@@ -151,7 +140,7 @@ article em {
     color: #18ff18;
 }
 
-article a:link {
+article a {
     color: #18ffff;
 }
 
