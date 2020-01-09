@@ -1,16 +1,18 @@
 @import "vars.css";
 
-@font-face {
+/*@font-face {
     font-family: "Commodore Rounded";
     src: url(../fonts/Commodore_Rounded_v1.2.woff);
     font-weight: bold;
-}
-
+}*/
 
 body {
-    font-size: 16px;
     line-height: 1.25;
-    font-family: "Commodore Rounded", monospace;
+    /*font-family: "Commodore Rounded", "Courier New", monospace; font-size: 16px;*/
+    font-family: 'Ubuntu Mono', "Courier", monospace; font-size:21px;
+    /*font-family: 'Share Tech Mono', monospace; font-size: 20px;*/
+    /*font-family: 'Oxygen Mono', monospace; font-size: 20px;*/
+
 }
 
 span.log {
@@ -37,25 +39,10 @@ h1 {
     margin-bottom: var(--char-height);
 }
 
-.log, label.error, .has-log p {
-    --log-before: calc(var(--char-width) * 22);
-    margin-left: var(--log-before);
+h2 {
+    color: #ffff54;
+    margin: var(--char-height) 0;
 }
-
-.has-log p .log {
-    margin-left: 0;
-}
-
-label.error {
-    --log-before: calc(var(--char-width) * 20);
-}
-
-.log::before, label.error::before {
-    position: absolute;
-    margin-left: calc(-1 * var(--log-before));
-    content: attr(data-time);
-}
-
 
 .log.info::before {
     content: attr(data-time)' INFO';
@@ -63,27 +50,27 @@ label.error {
 
 .log.warning::before {
     content: attr(data-time)' WARNING';
-    margin-right: 1.2em;
+    margin-right: 2ch;
 }
 
 .log.emphasis::before {
     content: attr(data-time)' EMPHASIS';
-    margin-right: .6em;
+    margin-right: 1ch;
 }
 
 .log.tagline::before {
     content: attr(data-time)' TAGLINE';
-    margin-right: .6em;
+    margin-right: 1ch;
 }
 
 .log.solution::before {
     content: attr(data-time)' SOLUTION';
-    margin-right: .6em;
+    margin-right: 1ch;
 }
 
 .log.error::before, label.error::before {
     content: attr(data-time)' ERROR';
-    margin-right: 2.4em;
+    margin-right: 4ch;
 }
 
 .log.action::before {
@@ -91,14 +78,34 @@ label.error {
     margin-right: .6em;
 }
 
-@media (max-width: 650px) {
-    .log, label.error, .has-log p {
-        margin-left: 0;
+@media (max-width: 500px) {
+    .
+    .log.info::before {
+        content: 'INFO';
     }
-    .log.log::before, label.label.error::before {
-        position: static;
-        margin-left: 0;
-        margin-right: var(--char-width);
-    }
-}
 
+    .log.warning::before {
+        content: 'WARNING';
+    }
+
+    .log.emphasis::before {
+        content: 'EMPHASIS';
+    }
+
+    .log.tagline::before {
+        content: 'TAGLINE';
+    }
+
+    .log.solution::before {
+        content: 'SOLUTION';
+    }
+
+    .log.error::before, label.error::before {
+        content: 'ERROR';
+    }
+
+    .log.action::before {
+        content: 'ACTION';
+    }
+
+}

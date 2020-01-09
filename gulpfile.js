@@ -15,7 +15,7 @@ var runSequence = require('run-sequence');
 gulp.task('postcss', function() {
     return gulp.src(['styles/*.css'])
         .pipe(postcss([cssimport,cssvariables({preserve:true}),postcssdiscarddublicates,postcssclean]))
-        .pipe(gulp.dest('out/styles'))
+        .pipe(gulp.dest('out-styles'))
         .pipe(gulp.dest('../DPSWebsite/web/styles'))
 });
 

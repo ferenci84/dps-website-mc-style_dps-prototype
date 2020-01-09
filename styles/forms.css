@@ -10,8 +10,14 @@
     width: 100%;
     box-sizing: border-box;
     max-width: calc(var(--char-width) * 70);
-    margin: 0 auto var(--char-height) auto;
+    margin: 0 auto;
     position: relative;
+}
+
+@media (min-width: 600px) {
+    .form-container {
+        padding: calc(var(--char-height) + var(--space-h)) calc(var(--char-width) + var(--space-w));
+    }
 }
 
 .form-container header {
@@ -21,9 +27,16 @@
     right: 0;
 }
 
-.form-container header h1 {
+@media (min-width: 600px) {
+    .form-container header {
+        top: calc(var(--char-height));
+    }
+}
+
+.form-container header h3 {
     margin: 0 auto;
-    width: fit-content;
+    display: table;
+    /* width: fit-content; */
     background-color: #b2b2b2;
     color: #1818b2;
     padding: 0 var(--char-width);
@@ -34,7 +47,15 @@ form {
 }
 
 .form-container form .form-section {
-    padding: calc(var(--space-h)) calc(var(--char-width) + var(--space-w));
+    padding: var(--space-h) var(--char-width);
+    padding: var(--space-h) var(--space-w);
+}
+
+@media (min-width: 600px) {
+    .form-container form .form-section {
+        padding: var(--space-h) var(--char-width);
+        padding: var(--space-h) calc(var(--char-width) + var(--space-w));
+    }
 }
 
 .form-container form .form-section:not(:first-child) {
@@ -46,7 +67,6 @@ form .text-input-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .text-input-container + .text-input-container,
@@ -67,11 +87,17 @@ form .button-container {
     justify-content: center;
 }
 
-input, textarea {
+input, textarea, input.error, textarea.error {
     display: block;
     width: 100%;
     flex-grow: 1;
     background-color: #18b2b2;
+    color: black;
+}
+
+input:focus, textarea:focus {
+    background-color: #18b218;
+
 }
 
 input {
